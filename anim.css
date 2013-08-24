@@ -111,6 +111,21 @@
 
 /* animation classes */
 
+.growin {
+    animation-iteration-count: 1;
+  animation-duration: 0.45s;
+  transform: scale(0.1);
+  animation-delay: 3.5s;
+  animation-name: growin;
+
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 0.7s;
+  -webkit-transform: scale(0.1);
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation: growin 0.45s 3.5s;
+  -webkit-animation-fill-mode: forwards;  
+}
+
 .loading {
     -webkit-animation: loading 4s ease-in-out infinite;
     animation: loading 4s ease-in-out infinite;
