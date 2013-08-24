@@ -1,0 +1,222 @@
+/* MJG Custom Stylesheet 
+  For Quick and Easy Animations
+  You can simply have a class='typeofAnim [delayxs] [option1] [option2]' */
+  
+
+/* animations */
+
+@keyframes loading
+{ 
+      0% { opacity: 0.5; }
+     50% { opacity: 0; }
+    100% { opacity: 0.5; }
+}
+@-moz-keyframes loading
+{ 
+      0% { opacity: 0.5; }
+     50% { opacity: 0; }
+    100% { opacity: 0.5; }
+}
+@-webkit-keyframes loading
+{ 
+      0% { opacity: 0.5; }
+     50% { opacity: 0; }
+    100% { opacity: 0.5; }
+}
+@-o-keyframes loading
+{ 
+      0% { opacity: 0.5; }
+     50% { opacity: 0; }
+    100% { opacity: 0.5; }
+}
+
+
+
+@keyframes hide
+{ 
+    from { opacity: 0; } to { opacity: 0 }
+}
+@-moz-keyframes hide
+{ 
+    from { opacity: 0; } to { opacity: 0 }
+}
+@-webkit-keyframes hide
+{ 
+    from { opacity: 0; } to { opacity: 0 }
+}
+@-o-keyframes hide
+{ 
+    from { opacity: 0; } to { opacity: 0 }
+}
+
+
+@keyframes growin {
+  0% { -webkit-transform: scale(0.1); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+  80% { -webkit-transform: scale(1.1); opacity: 0.9; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@-webkit-keyframes growin {
+  0% { -webkit-transform: scale(0.1); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+  80% { -webkit-transform: scale(1.1); opacity: 0.9; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+
+@keyframes slide {
+  100%{ left: 0; }
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+/* used to slide in from the right of the screen */
+@keyframes slide2 {
+  100% { right:0;}
+}
+@-webkit-keyframes slide2 {
+  100% { right:0;}
+}
+
+.slide2 {
+  -webkit-animation: slide2 1.2s forwards;
+  animation: slide2 1.2s forwards;
+}
+
+
+@keyframes fadein {
+   0% { opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+   0% { opacity: 0; }
+   50% { opacity: 1;}
+  100%{ opacity: 0; }
+}
+
+@-webkit-keyframes pulse {
+   0% { opacity: 0; }
+   50% { opacity: 1;}
+  100%{ opacity: 0; }
+}
+
+
+
+/* animation classes */
+
+.loading {
+    -webkit-animation: loading 4s ease-in-out infinite;
+    animation: loading 4s ease-in-out infinite;
+}
+
+.slide {
+  -webkit-animation: slide 1.2s forwards;
+  animation: slide 1.2s forwards;
+}
+
+.fadein {
+  -webkit-animation: fadein 1s forwards;
+  animation: fadein 1s forwards;
+}
+
+.fadeinthenpulse {
+  animation: fadein 1s linear forward, pulse 4s linear infinite;
+  -webkit-animation: fadein 1s linear forward, pulse 4s linear infinite;
+}
+
+.fromleft {
+  left: -100%;
+}
+
+.fromright {
+  right: 50%;
+}
+
+
+/*    ANIMATION DELAY CLASSES    */
+/* for timing certain animations */
+
+.delay1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay1200ms {
+  -webkit-animation-delay: 1200;
+  animation-delay: 1.2;
+}
+
+.delay1500ms {
+  -webkit-animation-delay: 1500;
+  animation-delay: 1500;
+}
+
+.delay1700ms {
+    -webkit-animation-delay: 1700;
+  animation-delay: 1700;
+}
+
+.delay2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.delay3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.delay4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.delay5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.delay6s {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.delay10s {
+    -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+
+/*==========================================================*/
+/*================== DEPRECIATED   CODE ====================*/
+/*==========================================================*/
+/*@keyframes slidefromleft {
+  100%{ left: 0;}
+}
+
+@-webkit-keyframes slidefromleft {
+  100% { left: 0; }
+}*/
+/*.slidefromleft {
+  -webkit-animation: slidefromleft 2s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slidefromleft 2s forwards;
+  animation-delay: 1s;
+}
+
+.slidefromright {
+  -webkit-animation: slidefromright 1s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slidefromright 1s forwards;
+  animation-delay: 2s;
+}
+*/
+/*===========================================================*/
+/*===========================================================*/
